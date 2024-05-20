@@ -1,4 +1,4 @@
-label {
+.label {
     font-weight: 700;
     font-size: 14px;
 }
@@ -8,16 +8,89 @@ label {
     height: 56px;
     border-radius: 8px;
     border-style: solid;
-    border-color: #CBD5E1;
-    padding: 10px 8px 10px 8px;
+    border-color: #CBD5E1 !important;
+    padding: 16px 8px 16px 8px;
 }
 
-.signup-form-container {
-    /* background-color: red; */
+.form-input::placeholder {
+    font-weight: 400;
+    opacity: 0.5;
+    color: #396178;
+    font-size: 16px;
+
+}
+
+.password-must-contain {
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .input-field {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.signup-form-heading {
+    width: 360px;
+    height: 32px;
+    margin-bottom: 37px;
+}
+
+.signup-form-heading p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.input-field-inner-child {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.password-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.password-checkbox-input {
+    display: flex;
+    gap: 20px;
+}
+
+.form-submit-checkbox {
+    margin-top: 37px;
+}
+
+.create-account-button {
+    margin: 24px 0 37px 0;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #E57727;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+    color: aliceblue;
+
+}
+
+.continue-with-google {
+    margin: 24px 0 37px 0;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color:1px solid #CBD5E1;
+    border-color: transparent;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.login-using-google {
+    width: 100%;
+    text-align: center;
 }
