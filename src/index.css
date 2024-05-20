@@ -26,13 +26,6 @@ body {
   font-family: 'poppins', sans-serif;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--accent-color-dark);
-  line-height: 1.8rem;
-}
 
 a {
   text-decoration: none;

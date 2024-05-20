@@ -1,42 +1,46 @@
 .vincertax-main-div {
-    display: flex;
+	display: flex;
 }
 
 .vincertax-left-side-div {
-    width: 50%;
-    height: 100vh;
+	width: 50%;
+	height: 100vh;
 }
 
 .left-side-second-child {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-image {
+	margin: 0 27px;
 }
 
 .left-side-second-child-inner {
-    width: 511px;
-    height: 438px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
+	width: 511px;
+	height: 438px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 20px;
 }
 
 /* vincertax-right-side-div */
 
 .vincertax-right-side-div {
-    width: 50%;
-    background-color: var(--primary-theme-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 50%;
+	background-color: var(--primary-theme-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* AliceCarousel */
 /* .vincertax-right-side-div .aliceCarousel {
-    height: "381px" !important;
-    width: "500px" !important;
-    background-color: "red" !important;
+height: "381px" !important;
+width: "500px" !important;
+background-color: "red" !important;
 } */

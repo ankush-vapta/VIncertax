@@ -38,17 +38,14 @@ const Vincertax = () => {
 							</p>
 							<Share
 								title="Get started"
-								gotoLoginPage ={gotoLoginPage}
+								gotoLoginPage={gotoLoginPage}
 							/>
 						</div>
 					</div>
 				</div>
 
 				<div className="vincertax-right-side-div">
-					<div
-						className="aliceCarousel"
-						style={{ height: "381px", width: "500px" }}
-					>
+					<div className="aliceCarousel" style={{ height: "381px", width: "500px" }}>
 						<AliceCarousel
 							mouseTracking items={items}
 						/>
