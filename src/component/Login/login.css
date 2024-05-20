@@ -1,0 +1,29 @@
+.login-main-div {
+    display: flex;
+}
+
+.login-left-side-div {
+    width: 50%;
+    height: 100vh;
+}
+
+.login-left-side-second-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-left-side-second-child-inner {
+    width: 360px;
+    height: 890px;
+    margin-top: 35px;
+}
+
+.login-right-side-div {
+    width: 50%;
+    background-color: var(--primary-theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

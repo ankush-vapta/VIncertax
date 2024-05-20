@@ -1,0 +1,10 @@
+.button {
+    padding: 12px 24px !important; 
+    background-color: var(--primary-button-color) !important;
+    color: white !important;
+    border-radius: 6px !important;
+    box-shadow: var(--primary-button-color) !important;
+    transition: 0.5s ease-out !important;
+    border: none !important;
+    font-weight: 700 !important;
+}

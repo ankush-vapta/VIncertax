@@ -1,0 +1,23 @@
+label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #CBD5E1;
+    padding: 10px 8px 10px 8px;
+}
+
+.signup-form-container {
+    /* background-color: red; */
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
