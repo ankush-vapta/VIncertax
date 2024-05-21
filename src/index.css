@@ -31,3 +31,22 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+
+/* DIspaly class */
+.display-flex {
+  display: flex;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.display-property {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

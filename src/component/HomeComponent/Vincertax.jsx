@@ -21,15 +21,15 @@ const Vincertax = () => {
 	];
 	return (
 		<>
-			<div className='vincertax-main-div'>
+			<div className='vincertax-main-div display-flex'>
 				<div className='vincertax-left-side-div'>
 					<div className="left-side-first-child">
 						<div className="logo-image">
 							<img src={vincertaxlogo} alt="image not supports" />
 						</div>
 					</div>
-					<div className="left-side-second-child">
-						<div className="left-side-second-child-inner">
+					<div className="left-side-second-child display-property">
+						<div className="left-side-second-child-inner display-flex justify-content">
 							<h3>
 								Welcome to Vincere Tax Portal: Your All-in-One Tax Solution
 							</h3>
@@ -44,7 +44,7 @@ const Vincertax = () => {
 					</div>
 				</div>
 
-				<div className="vincertax-right-side-div">
+				<div className="vincertax-right-side-div display-property">
 					<div className="aliceCarousel" style={{ height: "381px", width: "500px" }}>
 						<AliceCarousel
 							mouseTracking items={items}

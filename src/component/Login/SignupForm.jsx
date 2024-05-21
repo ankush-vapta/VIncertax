@@ -26,8 +26,8 @@ export const SignupForm = () => {
                         <div className="signup-form-heading" >
                             <p>Signup</p>
                         </div>
-                        <div className='input-field'>
-                            <div className='input-field-inner-child'>
+                        <div className='input-field display-flex'>
+                            <div className='input-field-inner-child display-flex'>
                                 <label className='label' for="myInput">Full name</label>
                                 <div>
                                     <input
@@ -74,9 +74,9 @@ export const SignupForm = () => {
                                 </div>
 
                             </div>
-                            <div className='password-checkbox' >
+                            <div className='password-checkbox display-flex' >
                                 <p className='password-must-contain'>Your password must contain</p>
-                                <div className='password-checkbox-input' >
+                                <div className='password-checkbox-input display-flex' >
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                                     <label for="vehicle1"> At least one capital letter</label>
                                 </div>
