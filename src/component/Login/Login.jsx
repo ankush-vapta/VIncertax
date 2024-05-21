@@ -13,20 +13,20 @@ const Login = () => {
     ];
     return (
         <>
-            <div className='login-main-div'>
+            <div className='login-main-div display-flex'>
                 <div className='login-left-side-div'>
                     <div className="login-left-side-first-child">
                         <div className="login-logo-image">
                             <img src={vincertaxlogo} alt="image not supports" />
                         </div>
                     </div>
-                    <div className="login-left-side-second-child">
+                    <div className="login-left-side-second-child display-property">
                         <div className="login-left-side-second-child-inner" >
                             <SignupForm />
                         </div>
                     </div>
                 </div>
-                <div className="login-right-side-div">
+                <div className="login-right-side-div display-property">
                     <div className="aliceCarousel" style={{ width: "500px" }}>
                         <AliceCarousel
                             mouseTracking items={items}

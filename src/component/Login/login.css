@@ -1,7 +1,3 @@
-.login-main-div {
-    display: flex;
-}
-
 .login-logo-image {
     margin: 0 27px;
 }
@@ -12,9 +8,6 @@
 
 .login-left-side-second-child {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .login-left-side-second-child-inner {
@@ -26,7 +19,4 @@
 .login-right-side-div {
     width: 50%;
     background-color: var(--primary-theme-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
