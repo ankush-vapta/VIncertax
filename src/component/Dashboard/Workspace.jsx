@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
 import StackedLineChartOutlinedIcon from '@mui/icons-material/StackedLineChartOutlined';
 import MultipleStopOutlinedIcon from '@mui/icons-material/MultipleStopOutlined';
@@ -8,50 +8,49 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import NotificationsActiveOutlinedIcon from '@mui/icons-material/NotificationsActiveOutlined';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
 import './workspace.css'
-import { sidebarpng } from '../../assets/config'
 import { Link } from 'react-router-dom';
 
 export const Workspace = () => {
 
 	const SidebarData = [
 		{
-			title: "About Us",
-			path: "/about-us",
+			title: "Documents",
+			path: "/documents",
 			icon: <MapOutlinedIcon />,
 		},
 		{
-			title: "Services",
-			path: "/services",
+			title: "Search",
+			path: "/search",
 			icon: <StackedLineChartOutlinedIcon />,
 		},
 		{
-			title: "Contact",
-			path: "/contact",
+			title: "Projects",
+			path: "/projects",
 			icon: <MultipleStopOutlinedIcon />,
 		},
 		{
-			title: "Events",
-			path: "/events",
+			title: "People",
+			path: "/people",
 			icon: <PeopleOutlinedIcon />,
 		},
 		{
-			title: "Support",
-			path: "/support",
+			title: "Invoices",
+			path: "/invoices",
 			icon: <FileCopyOutlinedIcon />,
 		},
 		{
-			title: "Support",
-			path: "/support",
+			title: "Chat",
+			path: "/chat",
 			icon: <ChatBubbleOutlineOutlinedIcon />,
 		},
 		{
-			title: "Support",
-			path: "/support",
+			title: "Notifications",
+			path: "/notifications",
 			icon: <NotificationsActiveOutlinedIcon />,
 		},
 		{
-			title: "Support",
-			path: "/support",
+			title: "Settings",
+			path: "/settings",
 			icon: <SettingsSuggestOutlinedIcon />,
 		},
 	];
@@ -60,9 +59,6 @@ export const Workspace = () => {
 			<div className='workspace-container'>
 				<nav className='sidebar-nav open '>
 					<div className='sidebar-nav-container'>
-						<div className='sidebar-link image-container'>
-							<img src={sidebarpng} alt="" />
-						</div>
 						{SidebarData.map((item, index) => {
 							return (
 								<>
