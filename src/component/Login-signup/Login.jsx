@@ -4,7 +4,6 @@ import { vincertaxlogo, pngFirst, pngSecond } from '../../assets/config'
 import { SignupForm } from './SignupForm'
 import AliceCarousel from 'react-alice-carousel'
 
-
 const Login = () => {
     const handleDragStart = (e) => e.preventDefault();
     const items = [

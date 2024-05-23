@@ -114,7 +114,7 @@ export const SignupForm = () => {
                 </div>
                 <div>
                     <p>Already have an account?<span>&nbsp;
-                        <Link to="/about-us" href="#">Log in</Link>
+                        <Link to="/documents" >Log in</Link>
                     </span></p>
                 </div>
             </div>
