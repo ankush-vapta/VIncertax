@@ -2,7 +2,9 @@ import React from 'react'
 
 export const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      <h1>Services</h1>
+    </div>
   )
 }
 
@@ -13,13 +15,13 @@ export const ServicesOne = () => {
 }
 
 export const ServicesTwo = () => {
-    return (
-      <div>ServicesTwo</div>
-    )
-  }
-  export const ServicesThree = () => {
-    return (
-      <div>ServicesThree</div>
-    )
-  }
+  return (
+    <div>ServicesTwo</div>
+  )
+}
+export const ServicesThree = () => {
+  return (
+    <div>ServicesThree</div>
+  )
+}
 

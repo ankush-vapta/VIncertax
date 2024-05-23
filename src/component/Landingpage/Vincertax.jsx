@@ -4,7 +4,7 @@ import { vincertaxlogo, pngFirst, pngSecond } from '../../assets/config'
 
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { Share } from '../ShareComponent/Share';
+import { CustomButton } from '../ShareElement/ShareElement';
 import { useNavigate } from 'react-router-dom';
 
 const Vincertax = () => {
@@ -36,7 +36,7 @@ const Vincertax = () => {
 							<p>
 								Are you ready to take control of your taxes like never before? Look no further – the Vincere Tax Portal is here to simplify your tax journey and empower you with unmatched convenience and expertise. Whether you're a valued tax client, a dedicated Vincere Tax Employee, or a trusted White Label Financial Advisor, our cutting-edge platform is designed to bring you closer to your financial goals.
 							</p>
-							<Share
+							<CustomButton
 								title="Get started"
 								gotoLoginPage={gotoLoginPage}
 							/>

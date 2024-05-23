@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import './signup.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -113,7 +114,7 @@ export const SignupForm = () => {
                 </div>
                 <div>
                     <p>Already have an account?<span>&nbsp;
-                        <a href="#">Log in</a>
+                        <Link to="/about-us" href="#">Log in</Link>
                     </span></p>
                 </div>
             </div>

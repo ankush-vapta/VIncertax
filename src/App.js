@@ -1,64 +1,82 @@
-import React, { useState } from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Vincertax from "./component/HomeComponent/Vincertax";
-import Login from "./component/Login/Login";
-import {
-  AboutUs,
-  OurAim,
-  OurVision,
-} from "./component/workspacehome/pages/AboutUs";
-import {
-  Services,
-  ServicesOne,
-  ServicesTwo,
-  ServicesThree,
-} from "./component/workspacehome/pages/Services";
-import Dashboard from "./component/workspace/Index";
+
+
+const Vincertax = lazy(() => import('./component/Landingpage/Vincertax'));
+const DashboardLayout = lazy(() => import('./component/Dashboard/Dashboard'));
+const Login = lazy(() => import('./component/Login-signup/Login'));
+const Documents = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Documents })));
+const Search = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Search })));
+const Projects = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Projects })));
+const People = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.People })));
+const Invoices = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Invoices })));
+const Chat = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Chat })));
+const Notifications = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Notifications })));
+const Settings = lazy(() => import('./component/pages/aboutus/AboutUs').then(module => ({ default: module.Settings })));
 
 const App = () => {
   return (
     <>
-      <Router>
-        <div className="container display-flex">
-          {true && <Dashboard />}
-          <div className="content">
+      <div>
+        <Router>
+          <Suspense
+            fallback={<div>Loading...</div>}
+          >
             <Routes>
-              <Route path="/" element={<Vincertax />} />
-              <Route path="/Login" element={<Login />} />
-              <Route path="Workspace" element={<Dashboard />} />
               <Route
-                path="/about-us"
-                element={<AboutUs />}
+                path="/"
+                element={<Vincertax />}
               />
               <Route
-                path="/about-us/aim"
-                element={<OurAim />}
+                path="/Login"
+                element={<Login />}
               />
+
               <Route
-                path="/about-us/vision"
-                element={<OurVision />}
-              />
+                element={<DashboardLayout />}
+              >
+                <Route
+                  path="/documents"
+                  element={<Documents />}
+                />
+                <Route
+                  path="/search"
+                  element={<Search />}
+                />
+                <Route
+                  path="/projects"
+                  element={<Projects />}
+                />
+                <Route
+                  path="/people"
+                  element={<People />}
+                />
+                <Route
+                  path="/invoices"
+                  element={<Invoices />}
+                />
+                <Route
+                  path="/chat"
+                  element={<Chat />}
+                />
+                <Route
+                  path="/notifications"
+                  element={<Notifications />}
+                />
+                <Route
+                  path="/settings"
+                  element={<Settings />}
+                />
+              </Route>
+
               <Route
-                path="/services"
-                element={<Services />}
+                path="*"
+                element={<>NotFound</>}
               />
-              <Route
-                path="/services/services1"
-                element={<ServicesOne />}
-              />
-              <Route
-                path="/services/services2"
-                element={<ServicesTwo />}
-              />
-              <Route
-                path="/services/services3"
-                element={<ServicesThree />}
-              />
-              <Route path="/NotFound" element={<>NotFound</>} />
             </Routes>
-          </div>
-        </div>
-      </Router>
+          </Suspense>
+        </Router>
+      </div>
 
     </>
   );
