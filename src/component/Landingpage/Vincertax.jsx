@@ -3,7 +3,6 @@ import './vincertax.css'
 import { vincertaxlogo, pngFirst, pngSecond } from '../../assets/config'
 
 import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
 import { CustomButton } from '../ShareElement/ShareElement';
 import { useNavigate } from 'react-router-dom';
 
