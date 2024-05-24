@@ -81,15 +81,15 @@ export const SignupForm = () => {
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                                     <label for="vehicle1"> At least one capital letter</label>
                                 </div>
-                                <div className='password-checkbox-input'>
+                                <div className='password-checkbox-input display-flex'>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                                     <label for="vehicle1"> At least one lowercase letter</label>
                                 </div>
-                                <div className='password-checkbox-input'>
+                                <div className='password-checkbox-input display-flex'>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                                     <label for="vehicle1"> At least one number</label>
                                 </div>
-                                <div className='password-checkbox-input'>
+                                <div className='password-checkbox-input display-flex'>
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
                                     <label for="vehicle1"> Password must be 8-20 characters long.</label>
                                 </div>
@@ -109,7 +109,7 @@ export const SignupForm = () => {
                 </div>
                 <div>
                     <button className='continue-with-google'>
-                        Continue with Google
+                        <Link to="/documents" > Continue with Google</Link>
                     </button>
                 </div>
                 <div>
