@@ -1,11 +1,117 @@
 import React from 'react'
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { image_inventory, image_dot } from '../../../assets/config'
+import './about.css';
 
 export const Documents = () => {
-    return (
-        <div>
-            <h1>Documents</h1>
-        </div>
-    )
+	return (
+		<>
+
+			<div className='document-container'>
+				<Grid container justify="center" spacing={2}>
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory' >
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p >Taxes</p>
+									<p style={{}}>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory' >
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p >Taxes</p>
+									<p style={{}}>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory' >
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p >Taxes</p>
+									<p style={{}}>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory' >
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p >Taxes</p>
+									<p style={{}}>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory'>
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p>Taxes</p>
+									<p>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+
+					<Grid item xs={6} sm={4}>
+						<Paper className='document-paper' >
+							<div className='document-paper-container'>
+								<div className='image-container-image_inventory'>
+									<img src={image_inventory} alt="image_inventory" />
+								</div>
+								<div className='document-paper-heading'>
+									<p>Taxes</p>
+									<p>Taxes</p>
+								</div>
+							</div>
+							<div className='document-paper-image_dot'>
+								<img src={image_dot} alt="image_dot" />
+							</div>
+						</Paper>
+					</Grid>
+				</Grid>
+			</div>
+		</>
+	)
 }
 export const Invoices = () => {
     return (

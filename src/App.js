@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
 const Vincertax = lazy(() => import('./component/Landingpage/Vincertax'));
 const DashboardLayout = lazy(() => import('./component/Dashboard/Dashboard'));
 const Login = lazy(() => import('./component/Login-signup/Login'));
