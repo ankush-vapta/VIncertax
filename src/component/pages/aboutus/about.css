@@ -1,7 +1,7 @@
 .document-container {
   padding: 30px 48px 0 48px;
   width: auto;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .image-container-image_inventory {
@@ -44,4 +44,30 @@
 .document-paper-heading:last-child {
   font-weight: 400;
   color: #64748B
+}
+
+/* Drawer component */
+.MuiPaper-root.MuiDrawer-paperAnchorRight.MuiDrawer-paperAnchorDockedRight.css-18sg6k4-MuiPaper-root-MuiDrawer-paper {
+  width: Fixed (649px)px;
+  height: Fixed (1, 024px)px;
+  left: 791px;
+  padding: 0px 0px 20px 0px;
+  gap: 25px;
+  opacity: 0px;
+}
+
+.Drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 12px 25px 12px 25px;
+  border-bottom: 2px solid black;
+}
+
+.Drawer-header-button {
+  background: red;
+  display: flex;
+  gap: 20px;
+
 }
