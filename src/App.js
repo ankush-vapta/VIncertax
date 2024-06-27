@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Loader from "./component/Loader/Loader";
 
 const Vincertax = lazy(() => import('./component/Landingpage/Vincertax'));
 const DashboardLayout = lazy(() => import('./component/Dashboard/Dashboard'));
@@ -17,9 +18,10 @@ const App = () => {
   return (
     <>
       <div>
+
         <Router>
           <Suspense
-            fallback={<div>Loading...</div>}
+            fallback={<Loader />}
           >
             <Routes>
               <Route

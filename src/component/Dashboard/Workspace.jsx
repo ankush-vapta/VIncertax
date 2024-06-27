@@ -12,60 +12,69 @@ import { Link } from 'react-router-dom';
 
 export const Workspace = () => {
 
-	const SidebarData = [
-		{
-			title: "Documents",
-			path: "/documents",
-			icon: <MapOutlinedIcon />,
-		},
-		{
-			title: "Search",
-			path: "/search",
-			icon: <StackedLineChartOutlinedIcon />,
-		},
-		{
-			title: "Projects",
-			path: "/projects",
-			icon: <MultipleStopOutlinedIcon />,
-		},
-		{
-			title: "People",
-			path: "/people",
-			icon: <PeopleOutlinedIcon />,
-		},
-		{
-			title: "Invoices",
-			path: "/invoices",
-			icon: <FileCopyOutlinedIcon />,
-		},
-		{
-			title: "Chat",
-			path: "/chat",
-			icon: <ChatBubbleOutlineOutlinedIcon />,
-		},
-		{
-			title: "Notifications",
-			path: "/notifications",
-			icon: <NotificationsActiveOutlinedIcon />,
-		},
-		{
-			title: "Settings",
-			path: "/settings",
-			icon: <SettingsSuggestOutlinedIcon />,
-		},
-	];
+
+	const SidebarDataOptions = () => {
+		const SidebarData = [
+			{
+				title: "Documents",
+				path: "/documents",
+				icon: <MapOutlinedIcon />,
+			},
+			{
+				title: "Search",
+				path: "/search",
+				icon: <StackedLineChartOutlinedIcon />,
+			},
+			{
+				title: "Projects",
+				path: "/projects",
+				icon: <MultipleStopOutlinedIcon />,
+			},
+			{
+				title: "People",
+				path: "/people",
+				icon: <PeopleOutlinedIcon />,
+			},
+			{
+				title: "Invoices",
+				path: "/invoices",
+				icon: <FileCopyOutlinedIcon />,
+			},
+			{
+				title: "Chat",
+				path: "/chat",
+				icon: <ChatBubbleOutlineOutlinedIcon />,
+			},
+			{
+				title: "Notifications",
+				path: "/notifications",
+				icon: <NotificationsActiveOutlinedIcon />,
+			}
+		];
+
+		if (SidebarData.length > 6) {
+			SidebarData.unshift({
+				title: "Settings",
+				path: "/settings",
+				icon: <SettingsSuggestOutlinedIcon />,
+			})
+		}
+		return SidebarData;
+	};
+	const SidebarDataOption = SidebarDataOptions();
 	return (
 		<>
 			<div className='workspace-container'>
 				<nav className='sidebar-nav open '>
 					<div className='sidebar-nav-container'>
-						{SidebarData.map((item, index) => {
+						{SidebarDataOption.map((item, index) => {
 							return (
-								<>
+								<React.Fragment key={index}>
 									<Link to={item.path} className='sidebar-link'>
 										<div>{item.icon}</div>
 										<div className='sidebar-label'>{item.title}</div>
-									</Link></>
+									</Link>
+								</React.Fragment>
 							);
 						})}
 					</div>
